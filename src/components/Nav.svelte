@@ -15,10 +15,9 @@
         }
     }
 </style>
-<p>{segment}</p>
 <nav class="navbar" aria-label="main navigate" >
     <div class="navbar-brand">
-        <a href="/"  class="navbar-item" >
+        <a href="/home"  class="navbar-item" >
             <img src="logo.png" alt="virus">
         </a>
         <span on:click={toggleNav} class="navbar-burger" class:is-active={isOpen}  aria-label="menu" aria-expanded="false" >
@@ -29,7 +28,7 @@
     </div>
     <div class="navbar-menu" class:is-active={isOpen}>
         <div class="navbar-start">
-            <a href="/" class="navbar-item" class:is-active={segment == undefined}>Home</a>
+            <a href="/home" class="navbar-item" class:is-active={segment == undefined}>Home</a>
             <a href="/about" class="navbar-item" class:is-active={segment == 'about'}>About</a>
         </div>
     </div>
